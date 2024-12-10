@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment #1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+    <div class="top-bar">Welcome to Lourdes Arocena's Garden</div>
+    
+    <section class="conversion-section" style="padding-top: 100px; text-align: center;">
+        <h1>Conversion Tool</h1>
+    
+        <div class="converter" style="margin: 50px;">
+          <label for="pickedConversion">Choose Conversion:</label>
+          <select id="pickedConversion" onchange="Conversion()">
+            <option value="CeltoFah">Celsius to Fahrenheit</option>
+            <option value="FahtoCel">Fahrenheit to Celsius</option>
+            <option value="M.toFt.">Meters to Feet</option>
+            <option value="Ft.toM.">Feet to Meters</option>
+          </select>
+        </div>
+
+        <div class="converter">
+          <input type="number" id="inputValue" placeholder="Enter value" />
+        </div><br>
+        <div class="btn" onclick="Conversion()">Convert</button> </div>
+        <div p id="result"></p></div>
+      </section>
+
+      <div class="back-to-home-page">
+        <a href="./index.html">Back to Home Page</a>
+      </div>
+
+      <script src="assignment1.js" defer></script> 
+</body>
+</html>
