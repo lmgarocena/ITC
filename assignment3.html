@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment #3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assignment3.css">
+</head>
+
+<body>
+    <div class="top-bar">Welcome to Lourdes Arocena's Garden</div>
+
+    <div class="calculator">
+        <h1>Number Calculator</h1>
+        <br>
+        <br>
+        <select id="operation">
+            <option value="factorial">Factorial</option>
+            <option value="sum">Sum of First N</option>
+            <option value="average">Average of First N</option>
+          </select>
+        <br>
+        <label for="numberInput">Enter a Number (N):</label>
+        <input type="number" id="numberInput" placeholder="Enter a number" required>
+        <label for="operation">Select Operation:</label>
+        <button onclick="numberCalculator()">Calculate</button>
+        <p class="result" id="result"></p>
+      </div>
+
+    <div class="back-to-home-page">
+        <a href="./main.html">Back to Home Page</a>
+    </div>
+
+    <script src="assignment3.js" defer></script> 
+</body>
